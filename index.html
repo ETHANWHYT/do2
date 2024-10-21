@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Date Request</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Great+Vibes&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>💖 A Special Question for You 💖</h1>
+            <img src="image.png" alt="Cute Panda" class="panda-image">
+        </div>
+        <div class="content">
+            <h2>Will you go on a date with me? 🌹✨</h2>
+            <div class="button-container">
+                <button class="yes-button" onclick="dateAccepted()">Yes! ❤️</button>
+                <button class="no-button" id="noButton" 
+                        onmouseover="moveNoButton()" 
+                        onclick="keepAsking()">No 😢</button>
+            </div>
+        </div>
+        <div id="confirmation" class="confirmation" style="display: none;">
+            <h2>Yay! Can't wait for our date! 🎉</h2>
+            <p>It's going to be unforgettable! 😍</p>
+        </div>
+        <audio id="backgroundMusic" loop>
+            <source src="v.mp3" type="audio/mpeg">
+        </audio>
+        <div class="music-toggle">
+            <label for="musicCheckbox">Play romantic music? 🎶</label>
+            <input type="checkbox" id="musicCheckbox" onclick="toggleMusic()">
+        </div>
+    </div>
+    <div id="confetti"></div>
+    <script src="script.js"></script>
+</body>
+</html>

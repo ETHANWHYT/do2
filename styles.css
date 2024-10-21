@@ -1,0 +1,108 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Great Vibes', cursive;
+    margin: 0;
+    padding: 0;
+    background-color: #ffebee; /* Soft pink background */
+    color: #333;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    overflow: hidden; /* Prevent overflow */
+}
+
+.header {
+    background-color: rgba(255, 105, 180, 0.8); /* Light pink background with transparency */
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.panda-image {
+    max-width: 200px;
+    height: auto;
+    margin: 20px 0; /* Space around the panda image */
+    animation: bounce 1s infinite; /* Bouncing effect */
+}
+
+.content {
+    margin-top: 30px;
+    background: rgba(255, 255, 255, 0.9); /* White background with transparency */
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.button-container {
+    margin: 20px 0;
+}
+
+.yes-button {
+    background-color: #90ee90; /* Light green */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.yes-button:hover {
+    background-color: #32cd32; /* Lime green */
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+.no-button {
+    background-color: #ff6666; /* Light red */
+    border: none;
+    padding: 15px 30px;
+    border-radius: 25px;
+    font-size: 1.2em;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.no-button:hover {
+    background-color: #ff0000; /* Darker red */
+    transform: scale(1.1); /* Slightly enlarge */
+}
+
+.confirmation {
+    background-color: rgba(255, 228, 196, 0.8); /* Light beige */
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.music-toggle {
+    margin-top: 20px;
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
+
+.confetti-piece {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    opacity: 0.9;
+    animation: fall 5s forwards;
+}
+
+@keyframes fall {
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
